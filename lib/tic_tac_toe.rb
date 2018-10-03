@@ -42,6 +42,7 @@ class TicTacToe
       true
     else
       false
+    end
   end
 
   def turn
