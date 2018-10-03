@@ -100,7 +100,7 @@ class TicTacToe
   def over?
     if draw?(@board) == true
       return true
-    elsif full?(@board) == true && won?(@board) != false
+    elsif full? == true && won? != false
       return true
     elsif full?(@board) == false && won?(@board) != false
       return true
