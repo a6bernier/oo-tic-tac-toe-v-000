@@ -110,20 +110,20 @@ class TicTacToe
   end
 
   def winner
-    if winner = won?(@board)
+    if winner = won?
       @board[winner[0]]
     end
   end
 
   def play
-    until over?(@board) == true do
+    until over? == true do
       turn(board)
     end
-      if winner(@board) == "X"
+      if winner == "X"
         puts "Congratulations X!"
-      elsif winner(@board) == "O"
+      elsif winner == "O"
         puts "Congratulations O!"
-      elsif draw?(@board) == true
+      elsif draw? == true
         puts "Cat's Game!"
     end
   end
