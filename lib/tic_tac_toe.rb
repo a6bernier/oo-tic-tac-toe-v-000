@@ -102,7 +102,7 @@ class TicTacToe
       return true
     elsif full? == true && won? != false
       return true
-    elsif full?(@board) == false && won?(@board) != false
+    elsif full? == false && won?(@board) != false
       return true
     else
       false
