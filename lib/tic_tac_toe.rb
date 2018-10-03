@@ -4,15 +4,6 @@ class TicTacToe
     @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
   end
 
-  def board=(board)
-    @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
-  end
-
-  def board
-    @board
-  end
-
-
   WIN_COMBINATIONS = [
     [0,1,2], #top
     [3,4,5], #Middle
