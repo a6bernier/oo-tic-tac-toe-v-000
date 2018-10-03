@@ -6,12 +6,6 @@ class TicTacToe
     @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
   end
 
-  def initialize
-    @index = index
-  end
-
-
-
   WIN_COMBINATIONS = [
     [0,1,2], #top
     [3,4,5], #Middle
