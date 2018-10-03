@@ -6,6 +6,10 @@ class TicTacToe
     @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
   end
 
+  def initialize
+    @index = index
+  end
+
 
 
   WIN_COMBINATIONS = [
