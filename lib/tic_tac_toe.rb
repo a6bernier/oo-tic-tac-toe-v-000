@@ -80,49 +80,49 @@ class TicTacToe
     false
   end
 
-  def full?(board)
-    if board.include?(" ")
+  def full?
+    if @board.include?(" ")
       false
     else
       true
     end
   end
 
-  def draw?(board)
-    if full?(board) == true && won?(board) == false
+  def draw?
+    if full?(@board) == true && won?(@board) == false
       true
     else
       false
     end
   end
 
-  def over?(board)
-    if draw?(board) == true
+  def over?
+    if draw?(@board) == true
       return true
-    elsif full?(board) == true && won?(board) != false
+    elsif full?(@board) == true && won?(@board) != false
       return true
-    elsif full?(board) == false && won?(board) != false
+    elsif full?(@board) == false && won?(@board) != false
       return true
     else
       false
     end
   end
 
-  def winner(board)
-    if winner = won?(board)
-      board[winner[0]]
+  def winner
+    if winner = won?(@board)
+      @board[winner[0]]
     end
   end
 
-  def play(board)
-    until over?(board) == true do
+  def play
+    until over?(@board) == true do
       turn(board)
     end
-      if winner(board) == "X"
+      if winner(@board) == "X"
         puts "Congratulations X!"
-      elsif winner(board) == "O"
+      elsif winner(@board) == "O"
         puts "Congratulations O!"
-      elsif draw?(board) == true
+      elsif draw?(@board) == true
         puts "Cat's Game!"
     end
   end
