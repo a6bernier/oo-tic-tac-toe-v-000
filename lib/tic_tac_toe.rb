@@ -1,6 +1,6 @@
 class TicTacToe
 
-  attr_accessor :board,
+  attr_accessor :board 
 
   def initialize
     @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
@@ -38,7 +38,7 @@ class TicTacToe
   def move(index, current_player)
     @board[index] = current_player
   end
-  
+
   def position_taken?(location)
     @board[location] != " " && @board[location] != ""
   end
