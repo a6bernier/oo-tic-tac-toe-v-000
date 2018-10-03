@@ -1,5 +1,10 @@
 class TicTacToe
 
+  def initialize(board)
+    @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
+  end
+
+
   WIN_COMBINATIONS = [
     [0,1,2], #top
     [3,4,5], #Middle
@@ -10,6 +15,8 @@ class TicTacToe
     [2,4,6], #diagonal
     [0,4,8]  #diagonal
   ]
+
+
 
   def display_board(board)
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
