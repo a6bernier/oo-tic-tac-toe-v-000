@@ -1,6 +1,6 @@
 class TicTacToe
 
-  attr_accessor :board, :display_board
+  attr_accessor :board, 
 
   def initialize
     @board = [ " ", " ",  " ",  " ",  " ",  " ",  " ",  " ", " " ]
